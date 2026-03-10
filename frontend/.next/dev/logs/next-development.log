@@ -1,0 +1,5 @@
+[00:00:02.397] Server  LOG     ✓ Ready in 1703ms
+[00:00:05.481] Server  LOG     ○ Compiling /dashboard/projects/[projectId] ...
+[00:00:11.664] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.114] Browser LOG     Socket authenticated
+[00:00:42.739] Browser LOG     Socket authenticated

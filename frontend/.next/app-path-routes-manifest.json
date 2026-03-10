@@ -1,0 +1,14 @@
+{
+  "/(auth)/login/page": "/login",
+  "/(auth)/register/page": "/register",
+  "/(dashboard)/dashboard/organizations/[orgId]/members/page": "/dashboard/organizations/[orgId]/members",
+  "/(dashboard)/dashboard/organizations/[orgId]/settings/page": "/dashboard/organizations/[orgId]/settings",
+  "/(dashboard)/dashboard/organizations/new/page": "/dashboard/organizations/new",
+  "/(dashboard)/dashboard/page": "/dashboard",
+  "/(dashboard)/dashboard/projects/[projectId]/page": "/dashboard/projects/[projectId]",
+  "/(dashboard)/dashboard/projects/new/page": "/dashboard/projects/new",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}

@@ -1,0 +1,14 @@
+{
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/(dashboard)/dashboard/organizations/[orgId]/members/page": "app/(dashboard)/dashboard/organizations/[orgId]/members/page.js",
+  "/(dashboard)/dashboard/organizations/[orgId]/settings/page": "app/(dashboard)/dashboard/organizations/[orgId]/settings/page.js",
+  "/(dashboard)/dashboard/organizations/new/page": "app/(dashboard)/dashboard/organizations/new/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
+  "/(dashboard)/dashboard/projects/[projectId]/page": "app/(dashboard)/dashboard/projects/[projectId]/page.js",
+  "/(dashboard)/dashboard/projects/new/page": "app/(dashboard)/dashboard/projects/new/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}
