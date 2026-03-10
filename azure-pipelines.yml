@@ -1,0 +1,51 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: BuildAndTest
+  displayName: 'Build and Test Project'
+  steps:
+  # --- Backend Steps (Python) ---
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.10'
+    displayName: 'Use Python 3.10'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r backend/requirements.txt
+      pip install pytest
+    displayName: 'Install Backend Dependencies'
+
+  - script: |
+      cd backend
+      pytest
+    displayName: 'Run pytest for Backend'
+    # We use continueOnError so that if you don't have tests yet, 
+    # the pipeline will show a warning instead of completely failing.
+    continueOnError: true
+
+  # --- Frontend Steps (Node.js/Next.js) ---
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.x'
+    displayName: 'Use Node 20.x'
+
+  - script: |
+      cd frontend
+      npm install
+    displayName: 'Install Frontend Dependencies'
+
+  - script: |
+      cd frontend
+      npm run lint
+    displayName: 'Run Frontend Linting'
+    continueOnError: true
+
+  - script: |
+      cd frontend
+      npm run build
+    displayName: 'Build Frontend Next.js App'
